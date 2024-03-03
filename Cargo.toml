@@ -1,0 +1,15 @@
+[package]
+name = "teapot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3.30"
+pin-project = "1.1.4"
+tokio = { version = "1.36.0", features = ["rt-multi-thread", "sync", "macros"] }
+tokio-stream = { version = "0.1.14", features = ["sync"] }
+
+[dev-dependencies]
+futures-test = "0.3.30"
